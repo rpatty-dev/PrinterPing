@@ -1,0 +1,64 @@
+# PrinterPing Configuration
+# Edit this file with your network printer and notification credentials.
+
+[printer]
+# IP address or hostname of your network printer
+ip = "192.168.1.200"
+
+# Friendly display name for reports and alerts
+name = "Office Multifunction Printer"
+
+# SNMP v1/v2c community string (default is almost always 'public')
+snmp_community = "public"
+
+# Timeout in seconds for SNMP queries
+snmp_timeout = 3.0
+
+[thresholds]
+# Normal warning threshold percentage (triggers 'Order Required')
+warning_threshold = 15
+
+# Critical cutoff percentage (triggers 'Replace Now')
+critical_threshold = 5
+
+# Re-alert only if level dropped by at least this percentage since previous alert
+min_drop_realert = 2
+
+# Maximum hours between reminder alerts while level remains low
+remind_interval_hours = 24
+
+[notifications]
+# Delivery channels: choose 'email', 'ntfy', or 'both'
+# Set email_enabled and/or ntfy_enabled to customize your alert routing.
+email_enabled = true
+ntfy_enabled = true
+
+[ntfy]
+# Instant push notifications to iOS, Android, and Desktop via ntfy (https://ntfy.sh)
+# No account or signup required. Install the ntfy app and subscribe to your topic.
+topic = "your-custom-topic-name"
+server = "https://ntfy.sh"
+priority = "high"
+
+[smtp]
+# Email alert configuration
+host = "smtp.example.com"
+port = 587
+use_tls = true
+
+# SMTP Authentication credentials (or leave empty if using environment variables)
+username = "alerts@example.com"
+password = "YOUR_SMTP_PASSWORD"
+
+# Sender and Recipient addresses
+from_email = "PrinterPing Alerts <alerts@example.com>"
+to_email = "admin@example.com"
+
+[spares_initial]
+# Initial spares physically in stock in your office/storeroom
+# When an item has a spare on hand, reorder alerts are deferred until critical cutoff (5%)
+Black = false
+Cyan = false
+Magenta = true
+Yellow = false
+"Black Drum" = false

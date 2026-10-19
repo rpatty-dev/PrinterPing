@@ -1,0 +1,13 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Local environment & secrets
+config.toml
+*.log
+printerping_state.json
+
+# OS generated files
+.DS_Store
+Thumbs.db
