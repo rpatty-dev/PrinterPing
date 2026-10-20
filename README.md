@@ -8,6 +8,7 @@
 
 <p align="center">
   <a href="#features">Features</a> &bull;
+  <a href="#promo-video">Promo Video</a> &bull;
   <a href="#quick-start">Quick Start</a> &bull;
   <a href="#configuration">Configuration</a> &bull;
   <a href="#how-it-works">How It Works</a> &bull;
@@ -18,12 +19,23 @@
   <img src="https://img.shields.io/badge/Python-3.8+-3776ab.svg?style=flat-square&logo=python&logoColor=white" alt="Python 3.8+" />
   <img src="https://img.shields.io/badge/Dependencies-Zero%20(Pure%20Stdlib)-success.svg?style=flat-square" alt="Dependencies Zero" />
   <img src="https://img.shields.io/badge/SNMP-RFC%203805%20%7C%20RFC%201514-blue.svg?style=flat-square" alt="SNMP Support" />
+  <img src="https://img.shields.io/badge/Promo%20Video-60s%201080p60-e6007e.svg?style=flat-square" alt="Promo Video" />
   <img src="https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square" alt="MIT License" />
 </p>
 
 </div>
 
 ---
+
+---
+
+## 🎬 Promo Video
+
+Watch the 60-second product walkthrough video showing real-time SNMP UDP 161 polling, live toner gauges, smart spare inventory matching, and instant low-toner dispatch:
+
+https://github.com/user-attachments/assets/printer-ping-promo.mp4
+
+> **Direct file:** [printer-ping-promo.mp4](printer-ping-promo.mp4) (60s, 1080p, 60fps, high-bitrate SaaS overview)
 
 ## ⚡ What is PrinterPing?
 
